@@ -49,8 +49,8 @@ export function Question({
   return (
     <Animated.View
       style={styles.container}
-      entering={enteringKeyframe}
-      exiting={exitingKeyframe}
+      entering={enteringKeyframe.duration(1000)}
+      exiting={exitingKeyframe.duration(1000)}
     >
       <Text style={styles.title}>{question.title}</Text>
 
